@@ -1,0 +1,34 @@
+.sidebar {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background-color: white;
+  width: 80px;
+  height: 100%;
+}
+
+.side-divisoes {
+  height: 90px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.side-divisoes:hover {
+  background-color: rgb(216, 216, 216);
+  cursor: pointer;
+}
+
+.side-divisoes div {
+  font-family: Roboto, Arial;
+  margin-top: 10px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.icons {
+  height: 22px;
+}

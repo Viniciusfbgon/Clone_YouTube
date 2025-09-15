@@ -1,0 +1,189 @@
+.header {
+  background-color: white;
+  height: 80px;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-part1 {
+  display: flex;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.head-foto {
+  height: 30px;
+  margin-right: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.head-part2 {
+  width: 500px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+}
+
+.lupa {
+  height: 25px;
+}
+
+.micro {
+  height: 25px;
+}
+
+.head-part3 {
+  display: flex;
+  width: 150px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.opcoes {
+  height: 40px;
+  cursor: pointer;
+}
+
+.head-part2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  width: 100%;
+}
+
+.search {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-right: none;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  outline: none;
+  background-color: white;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.lupa-botao {
+  background-color: #f0f0f0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-left: none;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding-left: 10px;
+  padding-right: 20px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.lupa {
+  height: 20px;
+}
+
+.mic-button {
+  background-color: #e6e6e6;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.micro {
+  height: 20px;
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(124, 124, 124, 0.9);
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  margin-left: 410px;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 100;
+  pointer-events: none;
+  bottom: -10px;
+}
+
+.mic-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.login {
+  padding: 15px;
+  padding-top: 10px;
+  background-color: rgb(241, 241, 241);
+  border-color: rgb(184, 184, 184);
+  border-style: solid;
+  padding-bottom: 10px;
+  border-width: 1px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 627px) {
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 0;
+  }
+
+  .search {
+    width: 0;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-right: none;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    outline: none;
+    background-color: white;
+  }
+
+  .head-part3 {
+    display: flex;
+    width: 150px;
+    margin-left: 20px;
+    position: relative;
+  }
+}
+
+@media (max-width: 599px) {
+  .search {
+    display: none;
+  }
+
+  .lupa-botao {
+    display: none;
+  }
+}
